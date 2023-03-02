@@ -337,6 +337,7 @@
             growth solutions.
           </p>
         </section>
+       
         <section class="footer-soc-section">
           <h3 class="footer-title">Social media</h3>
           <ul class="footer-list list">
@@ -369,16 +370,83 @@
               </a>
             </li>                                    
           </ul>
+        </section> 
+        <section class="footer-subscribe-section">
+              <h3 class="footer-title">Subscribe</h3>
+                <form class="form-subscribe">
+                <input class="subscribe-input" type="text" name="email" placeholder="E-mail" required>   
+                <button class="subscribe-btn" type="submit" >
+                  <span class="subscribe-span">Subscribe</span> 
+                    <svg class="subscribe-icon" width="24" height="20">
+                      <use href="./images/icons.svg#icon-telegram" ></use>
+                    </svg>       
+                </button> 
+                  </form>
         </section>
       </div>
     </footer>
-    <div class="beckdrop is-hidden" data-modal>
+    <div class="beckdrop is-hidden"  data-modal>
       <div class="modal">
         <button class="beckdrop-close" type="button" data-modal-close>
           <svg class="beckdrop-close-icons" width="8" height="8" >
             <use href="./images/icons.svg#icon-VectorX"></use>
           </svg>
         </button>
+        <p class="modal-tittle">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+
+          <div class="modal-field">
+            <label class="input-text" for="usere-email">Name</label>
+            <div class="input-wrap">
+              <input class="modal-input"
+              type="text"
+              name="user-name"
+              id="usere-email"
+              required >
+              <svg class="modal-icon" width="18px" height="18px" >
+                <use href="./images/icons.svg#icon-name" ></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label class="input-text" for="usere-phone">Phone</label>
+            <div class="input-wrap">
+              <input type="text" name="user-phone" class="modal-input"
+               id="usere-phone 
+               required">
+              <svg class="modal-icon" width="18px" height="24px" >
+                <use href="./images/icons.svg#icon-telefon" ></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label class="input-text" for="usere-email">Email</label>
+            <div class="input-wrap">
+              <input type="text" name="user-email" class="modal-input"
+               id="email 
+               required">
+              <svg class="modal-icon" width="18px" height="24px" >
+                <use href="./images/icons.svg#icon-email" ></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label class="input-text" for="usere-coment">Comment</label>
+            <textarea name="input-text" id="" class="modal-message" placeholder="Text input" ></textarea>
+          </div>
+          <div class="modal-field">
+            <input class="input-check visually-hidden " type="checkbox" id="policy" value="true">
+            <label for="policy" class="check-text">
+              <span>
+                <svg class="check-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the Privacy Policy</label>
+          </div>
+          <button class="modal-btn" type="submit">Send</button>
+
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
