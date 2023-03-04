@@ -815,11 +815,11 @@ button {
 }
 
 .input-text {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: #8e8f99;
   display: inline-block;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .input-wrap {
@@ -853,7 +853,13 @@ button {
   resize: none;
 }
 
+.link-policy {
+  color: #4d5ae5;
+}
+
 .modal-btn {
+  display: block;
+  margin: 0 auto;
   min-width: 169px;
   padding: 16px 32px;
   border-radius: 4px;
@@ -868,6 +874,7 @@ button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .modal-btn:is(:hover, :focus) {
   background: var(--activ-button-bg-hover-color);
 }
@@ -896,6 +903,7 @@ button {
   border: none;
   fill: #f4f4fd;
 }
+
 /* .check-text::before {
   content: '';
   border: 1.25px solid #2e2f42;
